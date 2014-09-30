@@ -55,7 +55,7 @@ LOCAL_SHARED_LIBRARIES := \
     libmedia
 
 ifneq ($(TARGET_SIMULATOR),true)
-LOCAL_SHARED_LIBRARIES += libdl
+LOCAL_SHARED_LIBRARIES += libdl liblog
 endif
 
 ifeq ($(strip $(TARGET_HAS_QACT)),true)
